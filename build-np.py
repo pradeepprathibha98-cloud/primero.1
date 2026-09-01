@@ -19,6 +19,8 @@ print("Final Table Shape:\n", final_table.shape)
 stocks = np.array([[150, 155, 160, 165, 170, 175, 180],
                    [200, 190, 180, 170, 160, 150, 140]])
 
+print("Stocks:\n", stocks)
+
 high_prices = stocks[stocks > 170]
 print("high_prices:/n", high_prices)
 
