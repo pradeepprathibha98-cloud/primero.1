@@ -48,3 +48,10 @@ print("Shape of Combined Grid:\n", combined.shape)
 top_month_idx = np.argmax(combined)
 print("Index of top monthly sales:\n", top_month_idx)
 
+row, col = np.unravel_index(np.argmax(combined), combined.shape)
+
+max_per_column = np.argmax(combined, axis=0)
+max_per_row = np.argmax(combined, axis=1)
+
+print("Max per column:\n", max_per_column)
+print("Max per row:\n", max_per_row)
