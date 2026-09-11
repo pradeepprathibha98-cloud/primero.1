@@ -11,7 +11,7 @@ final_table = prices * rates
 
 print("Original Prices:\n", prices)
 print("Rates:\n", rates)
-print("Final Table:(3 Countries x 5 Products)\n", final_table)
+print("Final Table:(3 Rates x 5 Prices)\n", final_table)
 print("Final Table Shape:\n", final_table.shape)
 
 # Stock Market Tracker
@@ -22,7 +22,7 @@ stocks = np.array([[150, 155, 160, 165, 170, 175, 180],
 print("Stocks:\n", stocks)
 
 high_prices = stocks[stocks > 170]
-print("high_prices:/n", high_prices)
+print("High Prices:\n", high_prices)
 
 print("Avg per Company:\n", np.mean(stocks, axis = 1))
 print("Avg per Day:\n", np.mean(stocks, axis = 0))
